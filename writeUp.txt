@@ -1,0 +1,9 @@
+Before describing the attributes functionalities, be familiar with term like:
+Host Tag:  tag containing th:replace, th:insert or th:include attribute [would be present in the target page where one would like to add the fragment]
+Fragment Tag: tag containing th:fragment attribute [would be present in any page depending upon the design of the page but generally one would store their fragments in modular fashion like header.html or fragments.html]
+
+th:replace - It will actually substitute the host tag by the fragment’s. That means, It will remove the host tag and in place of host tag, it will add the specified fragment including the fragment tag.
+
+th:insert - It will simply insert the specified fragment as the body of its host tag including the fragment tag.
+
+th:include - It will also insert the specified fragment as the body of its host tag but excluding the fragment tag.
