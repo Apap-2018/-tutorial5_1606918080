@@ -16,6 +16,7 @@
 	<form th:action="@{/dealer/delete}">
 		<input type="hidden" name="dealerId" th:value="${dealer.id}">
 		<button type="submit">Hapus Dealer</button>
+		<h6><a th:href="@{/dealer/update/} + ${dealer.id}">update Dealer</a></h6>
 	</form>
 	<br>
 	<form th:action="@{/car/delete}" th:object="${dealer}" method="POST">

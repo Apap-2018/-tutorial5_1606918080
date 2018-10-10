@@ -3,7 +3,7 @@
 
 <head>
 	<head th:fragment="title">
-		<title th:text="${title}"></title>
+		<title th:fragment="headerFragment(title)" th:text="${title}">Home</title>
 	</head>
 	
 	<head th:fragment="css">
